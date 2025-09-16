@@ -14,51 +14,60 @@
       <div class="left-side">
         <nav class="navbar">
           <div class="logo-bar">
-            <img src="images/simografika-logo.png" alt="">
+            <a href="index.html"><img src="images/simografika-logo.png" alt=""></a>
           </div>
           <ul class="navbar-ul">
-            <li class="navbar-li">
-              <a href="pages/posters.html">Posters</a>
-            </li>
-            <li class="navbar-li">
-              <a href="">Social Media</a>
-            </li>
-            <li class="navbar-li">
-                <a href="">Motion Design</a>
-            </li>
-            <li class="navbar-li">
-                <a href="">Logo Design</a>
-            </li>
-            <li class="navbar-li">
-                <a href="">Design Experiments</a>
-            </li>
-            <li class="navbar-li">
-                <a href="">LIDL print</a>
-              </li>
-            <li class="navbar-li">
-                <a href="">Lini SM</a>
-            </li>
-            <li class="navbar-li">
-                <a href="">BC Šiauliai</a>
-            </li>
+            <li class="navbar-li" data-target="posters"><a href="#">Posters</a></li>
+            <li class="navbar-li" data-target="social"><a href="#">Social Media</a></li>
+            <li class="navbar-li" data-target="motion"><a href="#">Motion</a></li>
+            <li class="navbar-li" data-target="logo"><a href="">Logo Design</a></li>
+            <li class="navbar-li" data-target="experiments"><a href="#">Experiments</a></li>
+            <li class="navbar-li" data-target="lidl"><a href="#">LIDL print</a></li>
+            <li class="navbar-li" data-target="lini"><a href="#">Lini SM</a></li>
+            <li class="navbar-li" data-target="siauliai"><a href="#">BC Šiauliai</a></li>
           </ul>
         </nav>
       </div>
-  
       <div class="right-side">
-        <div class="image-row">
-          <div class="img-container">img</div>
-          <div class="img-container">img</div>
+        <div id="posters" class="img-section img-active">
+          <div class="section-text">
+            <p>
+              A selection of poster designs I created — exploring typography, bold color palettes,
+              and composition inspired by modern graphic design.
+            </p>
+          </div>
+          <div class="gallery">
+            <img src="images/posters/posters-buzelis.png" alt="">
+            <img src="images/posters/posters-cole.jpg" alt="">
+            <img src="images/posters/posters-francisco.jpg" alt="">
+            <img src="images/posters/posters-taylor.jpg" alt="">
+            <img src="images/posters/posters-sabonis.jpg" alt="">
+            <img src="images/posters/posters-leclerc.png" alt="">
+            <img src="images/posters/posters-sainz.png" alt="">
+            <img src="images/posters/posters-sabonis02.png" alt="">
+            <img src="images/posters/posters-ferrari.png" alt="">
+          </div>
         </div>
-        <div class="image-row">
-          <div class="img-container">img</div>
-          <div class="img-container">img</div>
-        </div>
-        <div class="image-row">
-          <div class="img-container">img</div>
-          <div class="img-container">img</div>
+        <div id="social" class="img-section">
+          <div class="section-text">
+            <p>
+              Campaign graphics designed for social platforms — balancing clarity, impact,
+              and brand consistency across formats.
+            </p>
+          </div>
+        <div class="gallery">
+          <img src="images/social/social-hertz01.png" alt="">
+          <img src="images/social/social-hertz02.png" alt="">
+          <img src="images/social/social-hertz03.png" alt="">
+          <img src="images/social/social-hertz04.png" alt="">
+          <img src="images/social/social-sofa.jpg" alt="">
+          <img src="images/social/social-brutal.png" alt="">
+          <img src="images/social/social-europa.png" alt="">
+          <img src="images/social/social-polifonija.jpg" alt="">
+          <img src="images/social/social-lkt.png" alt="">
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
