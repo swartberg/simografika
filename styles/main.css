@@ -74,7 +74,7 @@
     font-weight: 600;
 }
 
-.navbar-li.active {
+.nav-active {
     font-size: 25px;
     font-weight: 500;
     text-decoration: underline;
@@ -106,3 +106,48 @@
 }
 
 /* ============ mobile ============ */
+
+@media (max-width: 768px) {
+    .main-body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo-bar img {
+        width: 100%;
+    }
+
+    .navbar {
+        position: static;
+        text-align: center;
+    }
+
+
+    .navbar-ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .gallery {
+        column-count: 1;
+        column-gap: 15px;
+    }
+
+    .left-side {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-side {
+        width: 100%;
+    }
+
+    .navbar-li a {
+        transition: none;
+    }
+
+    .navbar-li a:hover {
+        font-size: 20px;
+    }
