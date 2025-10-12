@@ -74,10 +74,9 @@
     font-weight: 600;
 }
 
-.nav-active {
-    font-size: 25px;
-    font-weight: 500;
-    text-decoration: underline;
+.nav-active a{
+    font-size: 26px;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -95,8 +94,17 @@
   cursor: pointer;
 }
 
+.gallery video {
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
 .gallery img:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 .section-text {
@@ -151,3 +159,8 @@
     .navbar-li a:hover {
         font-size: 20px;
     }
+
+    .nav-active a {
+        font-size: 20px;
+    }
+}
