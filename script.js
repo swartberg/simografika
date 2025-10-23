@@ -20,6 +20,21 @@ navItems.forEach(item => {
   });
 });
 
+window.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash.replace("#", "");
+  if (hash) {
+    const targetNav = document.querySelector(`.navbar-li[data-target="${hash}"]`);
+    const targetSection = document.getElementById(hash);
+
+    if (targetNav && targetSection) {
+      document.querySelectorAll(".navbar-li").forEach(nav => nav.classList.remove("nav-active"));
+      document.querySelectorAll(".img-section").forEach(sec => sec.classList.remove("img-active"));
+      targetNav.classList.add("nav-active");
+      targetSection.classList.add("img-active");
+    }
+  }
+});
+
 
 
 document.addEventListener("DOMContentLoaded", () => {
