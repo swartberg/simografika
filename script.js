@@ -18,3 +18,18 @@ navItems.forEach(item => {
         }
     });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const media = document.querySelectorAll(".gallery img, .gallery video");
+
+  media.forEach(el => {
+    if (el.complete) {
+      el.classList.add("loaded");
+    } else {
+      el.addEventListener("load", () => el.classList.add("loaded"));
+      el.addEventListener("loadeddata", () => el.classList.add("loaded"));
+    }
+  });
+});

@@ -20,11 +20,15 @@
     padding: 3vw;
     justify-content: center;
     margin: 0 auto;
+    align-items: flex-start;
 }
 
 .left-side {
     width: 20%;
     height: 100vh;
+    position: sticky;
+    top: 0;
+    height: fit-content;
 }
 
 .navbar {
@@ -85,6 +89,10 @@
   column-gap: 15px;
 }
 
+.gallery-single {
+  column-count: 1;
+}
+
 .gallery img {
   width: 100%;
   margin-bottom: 15px;
@@ -101,6 +109,19 @@
   border-radius: 8px;
   transition: transform 0.5s ease;
   cursor: pointer;
+}
+
+.gallery img,
+.gallery video {
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.gallery img.loaded,
+.gallery video.loaded {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .gallery img:hover {
