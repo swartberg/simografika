@@ -218,8 +218,11 @@ html, body {
         font-size: 20px;
         transition: none;
     }
+    .logo-bar img {
+        margin-bottom: 20px;
 }
 }
+
 
 @media (prefers-reduced-motion: reduce) {
     * {
