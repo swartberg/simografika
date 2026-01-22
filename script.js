@@ -49,3 +49,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+const rightSide = document.querySelector('.right-side');
+
+document.querySelectorAll('.navbar-li').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+
+    // scroll content to top
+    rightSide.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
